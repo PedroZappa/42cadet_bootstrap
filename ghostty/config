@@ -1,0 +1,41 @@
+# # Ghostty Config
+title = 
+
+# Theme
+# ghostty +list-themes
+theme = Dracula
+fullscreen = true
+
+background-opacity = 0.9
+background-blur = true
+background = #000000
+foreground = #ffffff
+
+# Get All available fonts
+# ghostty +list-fonts
+font-family = FiraCode Nerd Font
+font-family = Noto Sans Mono
+font-family = Noto Color Emoji
+font-size = 11
+font-synthetic-style = true
+
+# Mouse
+mouse-hide-while-typing = true
+copy-on-select = clipboard
+
+# Cursor
+cursor-color = #00FF00
+cursor-style = bar
+cursor-style-blink = true
+
+# Window
+window-vsync = true
+window-inherit-working-directory = true
+window-decoration = false
+
+# Shell
+shell-integration = detect
+shell-integration-features = cursor
+
+bold-is-bright = true
+

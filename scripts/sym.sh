@@ -31,8 +31,7 @@ declare -A FILES=(
     ["$HOME/.dotfiles/.editorconfig"]="$HOME/.editorconfig"
     ["$HOME/.dotfiles/.vimrc"]="$HOME/.vimrc"
     ["$HOME/.dotfiles/nvim"]="$HOME/.config/nvim"
-    ["$HOME/.dotfiles/.tmux.conf.local"]="$HOME/.tmux.conf.local"
-    ["$HOME/.dotfiles/btop/"]="$HOME/.config/btop"
+    ["$HOME/.dotfiles/.tmux.conf"]="$HOME/.tmux.conf"
     ["$HOME/.dotfiles/bat/"]="$HOME/.config/bat"
 )
 
