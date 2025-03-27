@@ -45,12 +45,24 @@ packages=(
     "yarn"
 )
 
-# Loop through the array and install each package
-for pkg in "${packages[@]}"; do
+install_package() {
     echo "Installing $pkg..."
     brew install "$pkg"
+}
+
+# Loop through the array and install each package
+for pkg in "${packages[@]}"; do
+    if ! install_package "$pkg"; then
+        ((ERRORS++))
+    fi
 done
 
 brew install --cask font-fira-code-nerd-font
 
-echo "All packages installed successfully!"
+# Final status message
+if [ $ERRORS -eq 0 ]; then
+    echo "${B}${GRN}󰄬 ${PRP}${USER}${YEL}'s .dotfiles symlinking completed successfully. ${GRN}💻${D}"
+else
+    echo "${B}${RED}󰄮 ${PRP}${USER}${YEL}'s .dotfiles symlinking completed with $ERRORS errors. ${RED}⚠${D}" >&2
+    # exit 1
+fi

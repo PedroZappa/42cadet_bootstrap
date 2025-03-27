@@ -11,6 +11,8 @@ git clone git@github.com:PedroZappa/42cadet_bootstrap.git ~/.dotfiles
 
 * Install `Homebrew Package Manager`:
 
+> Tested @ 42 Porto campus.
+
 ```sh
 ~/.dotfiles/scripts/brew42.sh
 ```
@@ -28,3 +30,5 @@ git clone git@github.com:PedroZappa/42cadet_bootstrap.git ~/.dotfiles
 ```sh
 ~/.dotfiles/scripts/sym.sh
 ```
+
+____
