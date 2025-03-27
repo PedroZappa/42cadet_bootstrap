@@ -1,0 +1,329 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# https://starship.rs/config/#prompt
+# Default Prompt for reference
+format = '''
+$virtualenv$directory$git_branch$git_commit$git_status$c$cmd_duration$python$nix_shell$shlvl
+$jobs$hostname$username $shell $character
+'''
+right_format = "$status${custom.minitalk}${custom.valgrind}$localip$time $battery$os"
+
+continuation_prompt = '▶▶ '
+# Don't print a new line at the start of the prompt
+add_newline = false
+# Wait 10 milliseconds for starship to check files under the current directory.
+scan_timeout = 77
+
+[localip]
+ssh_only = true
+format = '[$localipv4]($style) '
+style = "bold dimmed white"
+disabled = false
+
+[battery]
+full_symbol = "🔋"
+charging_symbol = "🔌"
+discharging_symbol = "⚡"
+
+[[battery.display]]
+threshold = 30
+style = "bold red"
+
+[character]
+format = "$symbol "
+error_symbol = "[❭](bold red)"
+success_symbol = "[❭](bold yellow)"
+vimcmd_symbol = "[❭ ](bold green)"
+vimcmd_replace_one_symbol = "[❭ ](bold purple)"
+vimcmd_replace_symbol = "[❭ ](bold purple)"
+vimcmd_visual_symbol = "[❭ ](bold yellow)"
+
+[directory]
+read_only = " 󰌾"
+truncate_to_repo = true
+style = "bold cyan underline"
+truncation_length = 4
+truncation_symbol = "../"
+format = "[$path]($style)[$lock_symbol]($lock_style) "
+
+[git_branch]
+symbol = " "
+style = "bold purple"
+format = "[on](bold dimmed white)[ ⟪ ](bold green)[$symbol$branch(:$remote_branch)]($style)[ ⟫ ](bold green)"
+
+[git_commit]
+commit_hash_length = 7
+tag_symbol = '🔖 '
+format = '[\($hash$tag\)]($style) '
+style = "bold yellow"
+only_detached = true
+disabled = false
+
+[git_state]
+# format = '([\[$conflicted$renamed$modified$staged$behind$deleted\]]($style) )'
+format = '\([$state( $progress_current/$progress_total)]($style)\) '
+cherry_pick = '[🍒 PICKING](bold red)'
+merge = '[󰘭 MERGING](bold red)'
+rebase = '[󰘭 REBASING](bold red)'
+revert = '[⎌ REVERTING](bold red)'
+bisect = '[󰃻 BISECTING](bold red)'
+disabled = false
+
+[git_status]
+format = '([\[$ahead_behind$all_status\]]($style) )'
+conflicted = '🏳'
+ahead = "🏃${count}"
+behind = "🐢 ×${count}"
+diverged = "🔱 🏃${ahead_count} 🐢 ×${behind_count}"
+up_to_date = '✓'
+untracked = '🤷'
+stashed = '📦'
+modified = '📝'
+staged = '[++\($count\)](bold yellow)'
+renamed = '👅'
+deleted = ''
+ 
+[shell]
+format = '[$indicator]($style)'
+fish_indicator = '󰈺'
+bash_indicator = ''
+zsh_indicator = ''
+powershell_indicator = '_'
+cmd_indicator = ''
+unknown_indicator = '?sh'
+style = 'bold yellow'
+disabled = false
+
+[shlvl]
+disabled = false
+format = '[$symbol$shlvl]($style)'
+style = 'bold green'
+repeat = true
+symbol = '❯'
+repeat_offset = 1
+threshold = 0
+
+[cmd_duration]
+min_time = 100  # miliseconds
+format = "[](bold cyan) [took](bold dimmed white) [$duration]($style) "
+style = "bold yellow"
+disabled = false
+
+[status]
+format = ' [$symbol$int $signal_name]($style) '
+pipestatus_format = '[\[$pipestatus\] => [$symbol$int$common_meaning$signal_name$maybe_int]($style)](bold cyan) '
+pipestatus_separator = '[|](bold cyan)'
+style = 'fg:yellow'
+symbol = '[](bold red) '
+success_symbol = ' '
+not_found_symbol = '[](bold red) '
+sigint_symbol = '[](bold red)  '
+signal_symbol = '󱐌 '
+recognize_signal_code = true
+map_symbol = true
+pipestatus = true
+disabled = false
+
+[hostname]
+ssh_symbol = " "
+ssh_only = false
+format = '[\[](bold green)[$hostname]($style)[\]](bold green)'
+trim_at = "-"
+style = "bold yellow"
+disabled = false
+
+[username]
+format = '[\[](bold green)[$user]($style)[\]](bold green)'
+style_user = "bold blue"
+style_root = 'black bold'
+disabled = false
+show_always = true
+
+[os]
+format = "[$symbol]($style)"
+style = "bold dimmed white"
+disabled = false
+
+[sudo]
+symbol = "👩🏻‍💻 "
+style = "bold dimmed white"
+disabled = false
+
+[jobs]
+format = '[$symbol$number]($style)'
+style = "bold purple"
+symbol = '✦'
+number_threshold = 2
+symbol_threshold = 0
+
+[time]
+time_format = "%T"
+format = "[󱫫 $time]($style)"
+style = "bold green"
+disabled = false
+
+[aws]
+symbol = "  "
+
+[buf]
+symbol = " "
+
+[c]
+symbol = " "
+format = '[via](bold dimmed white) [$symbol$name $version]($style) '
+commands = [[ 'cc', '--version' ], [ 'gcc', '--version' ], [ 'clang', '--version' ]]
+
+[conda]
+symbol = " "
+
+[dart]
+symbol = " "
+
+[docker_context]
+symbol = " "
+
+[custom.dockerfile]
+detect_files = ["Dockerfile"] # can specify filters but wildcards are not supported
+format = "[ 🐋](blue bold)"
+symbol = "🐋"
+
+[elixir]
+symbol = " "
+
+[elm]
+symbol = " "
+
+[fossil_branch]
+symbol = " "
+
+[golang]
+symbol = " "
+
+[guix_shell]
+symbol = " "
+
+[haskell]
+symbol = " "
+
+[haxe]
+symbol = " "
+
+[hg_branch]
+symbol = " "
+
+[java]
+symbol = " "
+
+[julia]
+symbol = " "
+
+[lua]
+symbol = " "
+
+[memory_usage]
+symbol = "󰍛 "
+
+[meson]
+symbol = "󰔷 "
+
+[nim]
+symbol = "󰆥 "
+
+[nix_shell]
+symbol = "  "
+impure_msg = '[💩](bold red)'
+pure_msg = '[😇](bold green)'
+unknown_msg = '[unknown](bold yellow)'
+format = 'via [$symbol$state( \($name\))](bold blue) '
+style = 'bold blue'
+disabled = false
+# heuristic = true
+
+[nodejs]
+symbol = " "
+format = '\[[$symbol($version)]($style)\]'
+
+[os.symbols]
+Alpaquita = " "
+Alpine = " "
+Amazon = " "
+Android = " "
+Arch = " "
+Artix = " "
+CentOS = " "
+Debian = " "
+DragonFly = " "
+Emscripten = " "
+EndeavourOS = " "
+Fedora = " "
+FreeBSD = " "
+Garuda = "󰛓 "
+Gentoo = " "
+HardenedBSD = "󰞌 "
+Illumos = "󰈸 "
+Linux = " "
+Mabox = " "
+Macos = " "
+Manjaro = " "
+Mariner = " "
+MidnightBSD = " "
+Mint = " "
+NetBSD = " "
+NixOS = " "
+OpenBSD = "󰈺 "
+openSUSE = " "
+OracleLinux = "󰌷 "
+Pop = " "
+Raspbian = " "
+Redhat = " "
+RedHatEnterprise = " "
+Redox = "󰀘 "
+Solus = "󰠳 "
+SUSE = " "
+Ubuntu = "[](bold red)"
+Unknown = " "
+Windows = "󰍲 "
+
+[package]
+symbol = "󰏗 "
+
+[pijul_channel]
+symbol = " "
+
+[python]
+symbol = " "
+format = 'via [${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+# format = '[($virtualenv )]($style)'
+version_format = 'v${raw}'
+detect_extensions = ['py']
+detect_files = ['.python-version', 'Pipfile', '__init__.py', 'pyproject.toml', 'requirements.txt', 'setup.py', 'tox.ini']
+detect_folders = []
+pyenv_version_name = true
+pyenv_prefix = ""
+style = "bold yellow"
+
+[rlang]
+symbol = "󰟔 "
+
+[ruby]
+symbol = " "
+
+[rust]
+symbol = " "
+
+[scala]
+symbol = " "
+
+[custom.valgrind]
+when  = "ps aux | grep valgrind | grep -v grep"
+command = "~/.dotfiles/scripts/starship/valgrind-pid.sh"
+format = "[⟪ ](bold red)[$symbol]($style) [$output](dimmed underline)[ ⟫](bold red) "
+style = "dimmed white"
+symbol = "󱗀"
+
+# kubernetes
+[kubernetes]
+symbol = "⛵ "
+style = "bold dimmed green"
+disabled = false
