@@ -23,7 +23,13 @@ git clone git@github.com:PedroZappa/42cadet_bootstrap.git ~/.dotfiles
 ~/.dotfiles/scripts/starter-brew.sh
 ```
 
-> [Homebrw Formulae](https://formulae.brew.sh/)
+* Install `zsh`s package Manager
+
+```sh
+~/.dotfiles/scripts/zap.sh
+```
+
+> [Homebrew Formulae](https://formulae.brew.sh/)
 
 * Symlink the dotfiles:
 

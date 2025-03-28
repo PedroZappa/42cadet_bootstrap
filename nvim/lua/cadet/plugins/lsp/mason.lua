@@ -66,8 +66,8 @@ return {
         -- "isort",    -- python import sorter
         "debugpy",   -- python debugger
         -- Writting
-        "write-good",
-        "markdownlint"
+        -- "write-good",
+        -- "markdownlint"
       },
     })
     -- vim.api.nvim_command("MasonToolsInstall")
@@ -77,10 +77,10 @@ return {
         "clangd",
         "lua_ls",
         -- "nil", -- nix
-        "jsonls",                    -- json
-        "html",                      -- html
-        "pyright",                   -- python
-        "hyprls",                    -- Hyprland
+        -- "jsonls",                    -- json
+        -- "html",                      -- html
+        -- "pyright",                   -- python
+        -- "hyprls",                    -- Hyprland
       },
       automatic_installation = true, -- not the same as ensure_installed
       handlers = {

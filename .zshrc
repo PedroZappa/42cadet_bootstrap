@@ -61,3 +61,6 @@ alias gl='git pull'
  else
      ZSH_THEME="refined"
  fi
+
+# Load Homebrew config script
+source $HOME/.brewconfig.zsh

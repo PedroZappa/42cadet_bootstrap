@@ -40,8 +40,8 @@ packages=(
     "gdb"
     "valgrind"
     # Web
-    "nodejs"
-    "npm"
+    # "nodejs"
+    # "npm"
     "yarn"
 )
 
