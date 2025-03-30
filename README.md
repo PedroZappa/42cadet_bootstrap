@@ -94,20 +94,35 @@ ____
 * [Neovim](https://neovim.io/)
 
 > [Lazy.nvim (Plugin Manager)](https://github.com/folke/lazy.nvim)
+>
 > [Mason.nvim (Package Manager)](https://github.com/williamboman/mason.nvim)
+>
 > [nvim-lspconfig (Plugin {LSP})](https://github.com/neovim/nvim-lspconfig)
+>
 > [fidget.nvim (Plugin {LSP Notifications})](https://github.com/j-hui/fidget.nvim)
+>
 > [blink.cmp (Plugin {Completion})](https://github.com/Saghen/blink.cmp)
+>
 > [markview.nvim (Plugin {Preview})](https://github.com/OXY2DEV/markview.nvim)
+>
 > [nvim-treesitter (Plugin {Syntax Highlighting})](https://github.com/nvim-treesitter/nvim-treesitter)
+>
 > [nvim-ufo (Plugin {Folding})](https://github.com/kevinhwang91/nvim-ufo)
+>
 > [neo-tree.nvim (Plugin {File Explorer}](https://github.com/nvim-neo-tree/neo-tree.nvim)]
+>
 > [oil.nvim (Plugin {File Explorer})](https://github.com/stevearc/oil.nvim)
+>
 > [which-key.nvim (Plugin {Keybindings})](https://github.com/folke/which-key.nvim)
+>
 > [snacks.nvim (Plugin {QoL})](https://github.com/folke/snacks.nvim)
+>
 > AI Integration (Off by default)
+>
 > [copilot.lua (Plugin {AI})](https://github.com/zbirenbaum/copilot.lua)
+>
 > [avante.nvim (Plugin {AI})](https://github.com/yetone/avante.nvim)
+>
 > Add more...
 
 * [Vim](https://www.vim.org/)
