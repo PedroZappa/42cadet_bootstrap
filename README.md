@@ -2,6 +2,7 @@
 
 <!-- mtoc-start -->
 
+* [Description](#description)
 * [Usage](#usage)
 * [Tool Glossary](#tool-glossary)
   * [Terminal](#terminal)
@@ -147,6 +148,6 @@ ____
 
 ### Documentation
 
-* [Doxygen](https://www.doxygen.nl/))
+* [Doxygen](https://www.doxygen./)
 
 ____
