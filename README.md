@@ -16,6 +16,12 @@
 
 <!-- mtoc-end -->
 
+## Description
+
+This repository serves as a bootstrap tool to kickstart your terminal experience, ensuring you feel right at home on any Linux machine.
+
+It also offers an introductory "Terminal Glossary", referencing crucial tools that will become your confidants throughout your 42 journey. While not exhaustive, this glossary provides a strong foundation to help you navigate the expansive world of coding. Dive deep into the realm of 0s and 1s and become a terminal pro @ 42!
+
 ## Usage
 
 * Download the bootstrap `.dotfiles` to your HOME directory:
