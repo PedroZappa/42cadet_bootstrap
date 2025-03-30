@@ -31,9 +31,10 @@ build your own `PDE` (Personalized Developement Enviroment).
 The `42cadet_bootstrap` also offers an introductory "Terminal Glossary", referencing
 crucial tools that will become your close friends throughout your 42 journey. While
 not exhaustive, this glossary provides a "bundle of pointers" to key tools to help
-you get your barings and navigate the enourmous depths of computer science. Dive
-deep into the realm of 0s and 1s and get a little closer to becoming a terminal
-pro @ 42!
+you get your barings and navigate the enourmous depths of computer science.
+
+Dive deep into the realm of 0s and 1s and get a little closer to becoming a terminal
+pro @ 42 with humble `bootstrap tool`!
 
 ## Usage
 
