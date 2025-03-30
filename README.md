@@ -26,13 +26,14 @@ streamlining the installation process, ensuring you got a strong foundation to
 build your own `PDE` (Personalized Developement Enviroment).
 
 > Why use someone else's opinionated `IDE` when you can have your very own terminal
-> `PDE`? 🙃
+> `PDE`? 🙃🫠🫠🫠
 
 The `42cadet_bootstrap` also offers an introductory "Terminal Glossary", referencing
-crucial tools that will become your confidants throughout your 42 journey. While
-not exhaustive, this glossary provides a "bundle of pointer" to help you navigate
-the enourmous depths of computer science. Dive deep into the realm of 0s and 1s and
-get a little closer to becoming a terminal pro @ 42!
+crucial tools that will become your close friends throughout your 42 journey. While
+not exhaustive, this glossary provides a "bundle of pointers" to key tools to help
+you get your barings and navigate the enourmous depths of computer science. Dive
+deep into the realm of 0s and 1s and get a little closer to becoming a terminal
+pro @ 42!
 
 ## Usage
 
