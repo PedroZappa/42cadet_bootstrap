@@ -17,11 +17,22 @@
 
 <!-- mtoc-end -->
 
+![Bootstrap 42](./img/bootstrap42.png)
+
 ## Description
 
-This repository serves as a bootstrap tool to kickstart your terminal experience, ensuring you feel right at home on any Linux machine.
+This repository serves as a `bootstrap tool` to kickstart your terminal experience,
+streamlining the installation process, ensuring you got a strong foundation to
+build your own `PDE` (Personalized Developement Enviroment).
 
-It also offers an introductory "Terminal Glossary", referencing crucial tools that will become your confidants throughout your 42 journey. While not exhaustive, this glossary provides a strong foundation to help you navigate the expansive world of coding. Dive deep into the realm of 0s and 1s and become a terminal pro @ 42!
+> Why use someone else's opinionated `IDE` when you can have your very own terminal
+> `PDE`? 🙃
+
+The `42cadet_bootstrap` also offers an introductory "Terminal Glossary", referencing
+crucial tools that will become your confidants throughout your 42 journey. While
+not exhaustive, this glossary provides a "bundle of pointer" to help you navigate
+the enourmous depths of computer science. Dive deep into the realm of 0s and 1s and
+get a little closer to becoming a terminal pro @ 42!
 
 ## Usage
 
