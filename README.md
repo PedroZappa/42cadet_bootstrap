@@ -12,6 +12,7 @@
   * [Text Editor](#text-editor)
   * [Pager](#pager)
   * [Debug](#debug)
+  * [Documentation](#documentation)
 
 <!-- mtoc-end -->
 
@@ -68,11 +69,19 @@ ____
 
 * [Git](https://git-scm.com/)
 
+> [git-config](https://git-scm.com/docs/git-config)
+> [gitignore](https://git-scm.com/docs/gitignore)
+
+* [GitHub](https://github.com/)
+
 ### Shell
 
 * [zsh (The Z Shell Manual)](https://zsh-manual.netlify.app/the-z-shell-manual)
 
-* [Zap  Package Manager](https://www.zapzsh.com/)
+> [zsh configuration files](https://www.baeldung.com/linux/zsh-configuration-files)
+> [How do zsh Configuration Files Work?](https://www.freecodecamp.org/news/how-do-zsh-configuration-files-work/)
+
+* [Zap Package Manager](https://www.zapzsh.com/)
 
 * [Starship Prompt](https://starship.rs/)
 
@@ -83,6 +92,14 @@ ____
 ### Text Editor
 
 * [Neovim](https://neovim.io/)
+
+> [Lazy.nvim (Plugin Manager)](https://github.com/folke/lazy.nvim)
+> [Mason.nvim (Package Manager)](https://github.com/williamboman/mason.nvim)
+> [nvim-lspconfig (Plugin {LSP})](https://github.com/neovim/nvim-lspconfig)
+> [blink.cmp (Plugin {Completion})](https://github.com/Saghen/blink.cmp)
+> AI Integration (Off by default)
+> [copilot.lua (Plugin {AI})](https://github.com/zbirenbaum/copilot.lua)
+> [avante.nvim (Plugin {AI})](https://github.com/yetone/avante.nvim)
 
 * [Vim](https://www.vim.org/)
 
@@ -97,5 +114,9 @@ ____
 * [GDB (GNU Debugger)](https://sourceware.org/gdb/current/onlinedocs/gdb)
 
 * [Valgrind (Intrumentation Framework)](https://valgrind.org/)
+
+### Documentation
+
+* [Doxygen](https://www.doxygen.nl/))
 
 ____

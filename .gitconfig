@@ -2,7 +2,7 @@
 	helper = 
 [user]
 	name = Zedro
-	email = zedrp@zedro.com
+	email = zedro@zedro.com
 [core]
 	editor = nvim
 [credential]
