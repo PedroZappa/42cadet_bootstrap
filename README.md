@@ -1,5 +1,7 @@
 # 42cadet_bootstrap
 
+![Bootstrap 42](./img/bootstrap42.png)
+
 <!-- mtoc-start -->
 
 * [Description](#description)
@@ -16,8 +18,6 @@
   * [Documentation](#documentation)
 
 <!-- mtoc-end -->
-
-![Bootstrap 42](./img/bootstrap42.png)
 
 ## Description
 
