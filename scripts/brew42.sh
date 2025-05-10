@@ -62,6 +62,6 @@ fi
 
 source $HOME/.brewconfig.zsh
 rehash
-bree update
+brew update
 
 echo "\nPlease open a new shell to finish installation"
