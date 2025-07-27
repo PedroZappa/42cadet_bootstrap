@@ -1,3 +1,5 @@
+**Note** : If you found this repo you should stop for a second and [read this](https://atomys.me/en/s42-sunset-story/)
+
 # 42cadet_bootstrap
 
 ![Bootstrap 42](./img/bootstrap42.png)
